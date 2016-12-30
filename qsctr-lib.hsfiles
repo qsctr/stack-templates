@@ -36,3 +36,12 @@ module Lib
 
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
+
+{-# START_FILE .vscode/tasks.json #-}
+{
+    "version": "0.1.0",
+    "command": "stack",
+    "isShellCommand": true,
+    "args": ["build"],
+    "showOutput": "always"
+}

@@ -30,3 +30,12 @@ module Main where
 
 main :: IO ()
 main = putStrLn "hello world"
+
+{-# START_FILE .vscode/tasks.json #-}
+{
+    "version": "0.1.0",
+    "command": "stack",
+    "isShellCommand": true,
+    "args": ["build"],
+    "showOutput": "always"
+}
