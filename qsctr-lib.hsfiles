@@ -24,11 +24,9 @@ library
 source-repository head
   type:     git
   location: https://github.com/{{github-username}}/{{name}}
-
 {-# START_FILE Setup.hs #-}
 import Distribution.Simple
 main = defaultMain
-
 {-# START_FILE src/Lib.hs #-}
 module Lib
     ( someFunc
@@ -36,7 +34,6 @@ module Lib
 
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
-
 {-# START_FILE .vscode/tasks.json #-}
 {
     "version": "0.1.0",

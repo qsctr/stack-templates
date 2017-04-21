@@ -20,17 +20,14 @@ executable {{name}}
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
   ghc-options:         -Wall
-
 {-# START_FILE Setup.hs #-}
 import Distribution.Simple
 main = defaultMain
-
 {-# START_FILE src/Main.hs #-}
 module Main where
 
 main :: IO ()
 main = putStrLn "hello world"
-
 {-# START_FILE .vscode/tasks.json #-}
 {
     "version": "0.1.0",
