@@ -35,3 +35,5 @@ main = putStrLn "hello world"
     "args": ["install"],
     "showOutput": "always"
 }
+{-# START_FILE .gitignore #-}
+.stack-work

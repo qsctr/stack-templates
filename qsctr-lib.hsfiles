@@ -41,3 +41,5 @@ someFunc = putStrLn "someFunc"
     "args": ["build"],
     "showOutput": "always"
 }
+{-# START_FILE .gitignore #-}
+.stack-work
