@@ -7,7 +7,6 @@ homepage:            https://github.com/{{github-username}}/{{name}}
 license:             MIT
 license-file:        LICENSE
 author:              {{author-name}}
-maintainer:          {{author-email}}
 copyright:           {{year}}{{^year}}2017{{/year}} {{author-name}}
 category:            {{category}}{{^category}}Web{{/category}}
 build-type:          Simple
