@@ -1,12 +1,9 @@
 {-# START_FILE package.yaml #-}
 name: {{name}}
 version: 0.1.0.0
-#synopsis: 
-#description: 
-category: {{category}}{{^category}}Web{{/category}}
 author: {{author-name}}
 maintainer: {{author-name}}
-copyright: (c) {{year}}{{^year}}2018{{/year}} {{author-name}}
+copyright: (c) {{year}}{{^year}}2021{{/year}} {{author-name}}
 license: MIT
 github: {{github-username}}/{{name}}
 extra-source-files:
@@ -30,32 +27,7 @@ module Main where
 
 main :: IO ()
 main = putStrLn "hello world"
-{-# START_FILE .vscode/tasks.json #-}
-{
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Build",
-      "type": "shell",
-      "command": "stack install --color never",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "presentation": {
-        "echo": true,
-        "reveal": always,
-        "focus": true,
-        "panel": "dedicated"
-      }
-    }
-  ]
-}
-{-# START_FILE .vscode/settings.json #-}
-{
-  "workbench.colorTheme": "Material Neutral - Classic"
-}
 {-# START_FILE .gitignore #-}
-.stack-work
-.vscode
+.stack-work/
+.vscode/
 {{name}}.cabal
