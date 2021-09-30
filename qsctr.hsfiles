@@ -32,7 +32,7 @@ main = putStrLn "hello world"
 
 {-# START_FILE .gitignore #-}
 .stack-work/
-.vscode/
+.vscode
 {{name}}.cabal
 
 {-# START_FILE hie.yaml #-}
