@@ -19,15 +19,23 @@ ghc-options:
 executable:
   source-dirs: src
   main: Main.hs
+
 {-# START_FILE Setup.hs #-}
 import Distribution.Simple
 main = defaultMain
+
 {-# START_FILE src/Main.hs #-}
 module Main where
 
 main :: IO ()
 main = putStrLn "hello world"
+
 {-# START_FILE .gitignore #-}
 .stack-work/
 .vscode/
 {{name}}.cabal
+
+{-# START_FILE hie.yaml #-}
+cradle:
+  stack:
+
